@@ -12,7 +12,7 @@ jobs:
     - name: Downloading NGROK.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/SSH-FTP/main/SSH-1.bat -OutFile Gar2007.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/SSH-FTP/main/SSH-1.bat -OutFile SSH-1.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/SSH-FTP/main/wallpaper.png -OutFile wallpaper.bmp
         Invoke-WebRequest https://raw.githubusercontent.com/AgisTriyagi/SSH-FTP/main/SSH-2.bat -OutFile wallpaper.bat
     - name: Extracting NGROK

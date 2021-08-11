@@ -13,7 +13,7 @@ jobs:
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/ramoni2424/SSH-FTP_no_law_1/main/SSH-1.bat -OutFile SSH-1.bat
-        Invoke-WebRequest https://github.com/ramoni2424/SSH-FTP_no_law_1/blob/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest  https://raw.githubusercontent.com/ramoni2424/SSH-FTP_no_law_1/main/wallpaper.png -OutFile wallpaper.bmp
         Invoke-WebRequesthttps://raw.githubusercontent.com/ramoni2424/SSH-FTP_no_law_1/main/SSH-2.bat -OutFile wallpaper.bat
     - name: Extracting NGROK
       run: Expand-Archive ngrok.zip

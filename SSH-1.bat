@@ -14,7 +14,7 @@ ICACLS C:\Windows\Temp /grant Administrator:F >nul
 ICACLS C:\Windows\installer /grant Administrator:F >nul
 echo Installed , Kalau RDPNya Mati Rebuild Lagi
 echo IP:
-tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:8080/api/tunnels | jq -r .tunnels[0].public_url || echo "Tidak Bisa Menghubungkan Ke NGROK Tunnel,Pastikan NGROK_TOKEN Sudah Benar Di Settings> Secrets> Repository Secret / Mungkin VM Anda Sebelumnya Masih Berjalan: https://dashboard.ngrok.com/status/tunnels "
+tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Tidak Bisa Menghubungkan Ke NGROK Tunnel,Pastikan NGROK_TOKEN Sudah Benar Di Settings> Secrets> Repository Secret / Mungkin VM Anda Sebelumnya Masih Berjalan: https://dashboard.ngrok.com/status/tunnels "
 echo Username: Administrator
 echo Password: Exynos300806
 echo Berhasil Membuat! , Login Ke RDP Anda Sekarang
